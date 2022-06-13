@@ -1,4 +1,21 @@
 .card {
     width: 400px;
     margin-top: 200px;
+    background-color: rgb(123, 162, 56);
+    border-radius: 5%;
 }
+
+p   {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.circulo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+

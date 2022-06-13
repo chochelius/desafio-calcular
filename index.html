@@ -11,26 +11,37 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
   </head>
   <body>
-    <div class="card container-md">
-      <img src="assets/img/laptop.png" class="thumbnail" alt="..." />
-      <div class="card-body">
-        <input id="cantidad"/>
-        <input id="color"/>
 
-        <button onClick="calcular()" >Calcular</button>
+ <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <div class="card container-md">
+        <img src="./assets/img/laptop.png" class="thumbnail" alt="..." />
+        <div class="card-body">
+          <p class="h3">Laptop Amd</p>
+          <input id="cantidad" class="form-control" placeholder="Cantidad"/>
+          <select class="form-select" id="color">
+            <option value="none" selected>Color</option>
+            <option value="black">Negro</option>
+            <option value="white">Blanco</option>
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+          </select>
+          <p>Precio: $400000</p>
+          <button type="button" class="btn btn-warning" id="boton"> Calcular</button> 
+        </div>
       </div>
     </div>
-      <!-- ... más HTML ... -->
+    <div class="col-4 my-auto">
+      <div id="resultado" class="container-md"></div>
+    </div>
+  </div>
 
-  <!-- Cargar React. -->
-  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <!-- Cargamos nuestro componente de React. -->
-  <script src="like_button.js"></script>
-    <script src="assets/js/script.js"></script>
+</div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
